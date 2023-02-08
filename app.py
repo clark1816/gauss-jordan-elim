@@ -12,6 +12,7 @@ matrix = torch.zeros(rows,columns)
 for i in range(rows):
     for j in range(columns):
         matrix[i,j] = st.number_input(f"please enter value for row {i+1} and column {j+1}",value= 0.0, step=1.0)
+st.table(matrix)
 calculate = st.button("calculate")
 if calculate:
     st.write("Augmented matrix:")
