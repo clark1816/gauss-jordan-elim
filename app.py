@@ -59,3 +59,6 @@ if calculate:
 
     st.write("Result:")
     st.write(aug)
+    #convert augmented matrix to numpy array
+    aug = aug.numpy()
+    st.dataframe(aug)
